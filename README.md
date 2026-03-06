@@ -25,10 +25,39 @@ This skill is **reference and ecosystem oriented**. For implementation patterns 
 ## Install
 
 ```bash
-npx skills add <owner>/devcontainers-best-practices
+npx skills add afonsograca/devcontainers-best-practices
 ```
 
-Replace `<owner>` with the GitHub org or username that hosts this repo.
+To install from another fork or org, use `npx skills add <owner>/devcontainers-best-practices` or a [full URL or path](https://github.com/vercel-labs/skills#source-formats).
+
+## Updating
+
+The CLI tracks skills by source (e.g. your repo). To get refinements after you’ve already installed:
+
+```bash
+npx skills check   # see if any installed skills have updates
+npx skills update  # update all installed skills to latest
+```
+
+You don’t need to run `npx skills add` again. Re-running `add` would also refresh this skill, but `skills update` is the intended way to pull the latest for all skills at once.
+
+## Repository structure
+
+This repo follows the [Agent Skills specification](https://agentskills.io/specification) and [skills.sh](https://github.com/vercel-labs/skills) discovery. The CLI looks for skills in the root (if it has `SKILL.md`) or under `skills/`. This skill lives under `skills/`:
+
+```
+skills/
+└── devcontainers-best-practices/
+    ├── SKILL.md
+    └── references/
+        ├── spec.md
+        ├── schema.md
+        ├── tools.md
+        ├── features.md
+        └── templates.md
+```
+
+The `name` in `SKILL.md` frontmatter matches the directory name (`devcontainers-best-practices`). Detailed reference material is in `references/` so agents can load it on demand.
 
 ## Links
 
