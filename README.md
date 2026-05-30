@@ -9,7 +9,7 @@
 [![Keep a Changelog][changelog-badge]][changelog]
 [![Contributor Covenant][code-of-conduct-badge]][code-of-conduct]
 
-A [skills.sh](https://skills.sh/) skill that teaches agents and developers **where and how** to look up the Development Container spec, `devcontainer.json` reference and schema, Features, Templates, and tools that support devcontainers.
+An agent skill for **dev containers** — `devcontainer.json`, the Dev Container spec & schema, Features, Templates, and the tools that support them (VS Code, GitHub Codespaces, Cursor, Zed, DevPod, Podman). It teaches agents and developers **where and how** to look up the right reference and apply official best practices. Installable via [skills.sh](https://skills.sh/).
 
 ## What this skill covers
 
